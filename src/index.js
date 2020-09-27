@@ -1,22 +1,26 @@
-import Phaser from "phaser";
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./components/App.jsx";
-import playGame from "./phaser/scene";
+import Phaser, { Game } from 'phaser';
+import { GameScene } from './phaser/GameScene';
+import { gameField } from './phaser/constants';
 
-//console.log(App);
-
-export const config = {
+const config = {
   type: Phaser.AUTO,
-  parent: "phaser",
-  width: 800,
-  height: 600,
-  scene: playGame
+  parent: 'phaser-example',
+  scale: {
+    mode: Phaser.Scale.ENVELOP,
+    autoRound: true,
+    parent: 'phaser-example',
+    width: gameField.width,
+    height: gameField.height,
+    min: {
+      width: 400,
+      height: gameField.height,
+    },
+    max: {
+      width: gameField.width,
+      height: gameField.width,
+    },
+  },
+  scene: GameScene,
 };
 
-const game = new Phaser.Game(config);
-
-ReactDOM.render(
-  <App />,
-  document.getElementById("root") || document.createElement("div")
-);
+const game = new Game(config);
