@@ -7,6 +7,14 @@ import cirlce from '../assets/circle.png';
 import dog from '../assets/doggy.png';
 import logo from '../assets/logo.png';
 import preview from '../assets/bg.png';
+import circle1 from '../assets/circle_1.png';
+import circle2 from '../assets/circle_2.png';
+import circle3 from '../assets/circle_3.png';
+import circle4 from '../assets/circle_4.png';
+import circle5 from '../assets/circle_5.png';
+import circle6 from '../assets/circle_6.png';
+import circle7 from '../assets/circle_7.png';
+import circle8 from '../assets/circle_8.png';
 
 
 const dogsImages = [];
@@ -26,7 +34,14 @@ export class GameScene extends Scene {
     this.load.image('dog', dog);
     this.load.image('logo', logo);
     this.load.image('preview', preview);
-    this.loadCircleParts();
+    this.load.image('circle-1', circle1);
+    this.load.image('circle-2', circle2);
+    this.load.image('circle-3', circle3);
+    this.load.image('circle-4', circle4);
+    this.load.image('circle-5', circle5);
+    this.load.image('circle-6', circle6);
+    this.load.image('circle-7', circle7);
+    this.load.image('circle-8', circle8);
   }
 
   create() {
@@ -175,12 +190,6 @@ export class GameScene extends Scene {
         }, 1000);
       }
     });
-  }
-
-  loadCircleParts() {
-    for (let i = 1; i < 9; i++) {
-      this.load.image(`circle-${i}`, `src/assets/circle_${i}.png`);
-    }
   }
 
   generateCircle() {
