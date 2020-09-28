@@ -1,5 +1,13 @@
 import Phaser, { Scene } from 'phaser';
 import { gameField, dogs } from './constants';
+import background from '../assets/back_five_dogs.jpg';
+import button from '../assets/btn.png';
+import woman from '../assets/char.png';
+import cirlce from '../assets/circle.png';
+import dog from '../assets/doggy.png';
+import logo from '../assets/logo.png';
+import preview from '../assets/bg.png';
+
 
 const dogsImages = [];
 const smallScreenCircles = [];
@@ -11,13 +19,13 @@ export class GameScene extends Scene {
   }
 
   preload() {
-    this.load.image('background', 'src/assets/back_five_dogs.jpg');
-    this.load.image('button', 'src/assets/btn.png');
-    this.load.image('woman', 'src/assets/char.png');
-    this.load.image('circle', 'src/assets/circle.png');
-    this.load.image('dog', 'src/assets/doggy.png');
-    this.load.image('logo', 'src/assets/logo.png');
-    this.load.image('preview', 'src/assets/bg.png');
+    this.load.image('background', background);
+    this.load.image('button', button);
+    this.load.image('woman', woman);
+    this.load.image('circle', cirlce);
+    this.load.image('dog', dog);
+    this.load.image('logo', logo);
+    this.load.image('preview', preview);
     this.loadCircleParts();
   }
 
