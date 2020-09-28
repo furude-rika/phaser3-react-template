@@ -1,0 +1,9 @@
+body {
+  display: grid;
+  justify-content: center;
+  background-color: #24292E;
+}
+
+canvas {
+  margin: 0 auto !important;
+}
