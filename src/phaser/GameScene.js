@@ -16,7 +16,6 @@ import circle6 from '../assets/circle_6.png';
 import circle7 from '../assets/circle_7.png';
 import circle8 from '../assets/circle_8.png';
 
-
 const dogsImages = [];
 const smallScreenCircles = [];
 const largeScreenCircles = [];
