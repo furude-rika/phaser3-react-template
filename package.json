@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/photonstorm/phaser3-project-template/issues"
   },
-  "homepage": "https://github.com/furude-rika/phaser3-react-template",
+  "homepage": "https://furude-rika.github.io/phaser3-react-template",
   "devDependencies": {
     "@babel/core": "^7.4.3",
     "@babel/plugin-proposal-class-properties": "^7.4.0",
